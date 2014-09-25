@@ -44,6 +44,8 @@ $('html,body').animate({
 
 
 if ( ninjaScroll.sectionQty == ninjaScroll.linkQty ) {
+
+	ninjaScroll.hasNav = true;
 	
 }
 
@@ -135,8 +137,14 @@ if (!(Modernizr.touch) && (ninjaScroll.winW > ninjaScroll.minWidth)) { // If dev
 				
 				}, ninjaScroll.speed, ninjaScroll.easing, function(){
 					ninjaScroll.done = true;
-					$('.ss-link').removeClass('current');
-					$('.ss-link').eq(ninjaScroll.next).addClass('current');
+					
+					if (ninjaScroll.hasNav) {
+					
+						$('.ss-link').removeClass('current');
+						$('.ss-link').eq(ninjaScroll.next).addClass('current');
+						
+					}
+					
 			});
 			
 		}
@@ -173,8 +181,14 @@ if (!(Modernizr.touch) && (ninjaScroll.winW > ninjaScroll.minWidth)) { // If dev
 
 			}, ninjaScroll.speed, ninjaScroll.easing, function(){
 				ninjaScroll.done = true;
-				$('.ss-link').removeClass('current');
-				$('.ss-link').eq(ninjaScroll.next).addClass('current');
+				
+				if (ninjaScroll.hasNav) {
+				
+					$('.ss-link').removeClass('current');
+					$('.ss-link').eq(ninjaScroll.next).addClass('current');
+					
+				}
+					
 			});
 		
 		}
