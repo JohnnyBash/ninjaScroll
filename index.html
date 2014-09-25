@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo - ninjaScroll</title>
+	
+	<!-- Disclaimer: As of June 2014, I don't support IE8 and below, and neither should you. -->
+	
+	
+	<!-- Good practice -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- /Good practice -->
+	
+	
+	<!-- Demo styles -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Oswald:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	<!-- /Demo styles -->
+	
+	
+	<!-- Required -->
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script> <!-- You will need Modernizr for the plugin to work. -->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script> <!-- You will need jQuery for the plugin to work. -->
+	<script type="text/javascript" src="js/mousewheel.js"></script> <!-- You will need mousewheel.js for the plugin to work. -->
+	<script type="text/javascript" src="js/easing.min.js"></script> <!-- You will need Easing for the plugin to work. -->
+	<script type="text/javascript" src="js/ninjaScroll.js"></script> <!-- This is the main script that I created to perform the scrolling functions -->
+	<!-- /Required -->
+	
+</head>
+<body>
+	
+	<nav>
+		<ul>
+			<li>
+				<a href="#link1" class="ss-link">Link 1</a> <!-- Links to different sections/windows are optional. Use # link syntax for HREFs and include the 'ss-link' class. -->
+			</li>
+			<li>
+				<a href="#link2" class="ss-link">Link 2</a>
+			</li>
+			<li>
+				<a href="#link3" class="ss-link">Link 3</a>
+			</li>
+			<li>
+				<a href="#link4" class="ss-link">Link 4</a>
+			</li>
+			<li>
+				<a href="#link5" class="ss-link">Link 5</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<section style="background-color:#ffb260;" class="ss-window" id="link1"> <!-- Any container that you're going to make a scrollSnap section must have the class 'ss-window' -->
+		<div>
+			<h1>ninjaScroll</h1>
+			<p>full window snap scrolling</p>
+		</div>
+	</section>
+	
+	<section style="background-color:#8dff61;" class="ss-window" id="link2">
+		<div>
+			<h1>Lorem Ipsum</h1>
+			<p>Fresh!!!</p>
+		</div>
+	</section>
+	
+	<section style="background-color:#61fff2;" class="ss-window" id="link3">
+		<div>
+			<h1>What's a Coder Like You...</h1>
+			<p>...doing in an Interwebs like this?</p>
+		</div>
+	</section>
+	
+	<section style="background-color:#7461ff;" class="ss-window" id="link4">
+		<div>			
+			<h1>Greatest Title</h1>
+			<p>even greater strapline</p>
+		</div>
+	</section>
+	
+	<section style="background-color:#ff61cc;" class="ss-window" id="link5">
+		<div>
+			<h1>Automatic Title</h1>
+			<p>rythmic writing rocks</p>
+		</div>
+	</section>
+	
+	
+	
+</body>
+</html>
